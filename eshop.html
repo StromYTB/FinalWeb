@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="C 3.png">
+    <title>CBP 2077 E-Shop</title>
+    <link rel="stylesheet" href="eshop.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function addToCart(product, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({product, price});
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${product} byl přidán do košíku!`);
+        }
+
+        function openCart() {
+            window.location.href = 'cart.html';
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="C 3.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            CBP 2077
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" id="buttons" aria-current="page" href="index.html">Domovská Stránka</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="buttons" aria-current="page" href="eshop.html">E-Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="buttons" aria-current="page" href="curious.html">Zajímavosti</a>
+              </li>
+              <li class="nav-item">
+                <img style="cursor: pointer;" src="https://pngimg.com/d/shopping_cart_PNG4.png" alt="" width="30" height="30" class="d-inline-block align-text-top" onclick="openCart()">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row cards">
+          <div class="col-md-4 col-sm-6">
+            <div class="card text-light bg-dark mb-3">
+              <img src="https://im9.cz/iR/importprodukt-orig/491/4916eba4b084d038cdfba9286520440b--mmf350x350.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Johny Silverhand Funko Pop</h5>
+                <p class="card-text">Figurka hlavní postavy Johny Silverhanda</p>
+                <button onclick="addToCart('Johny Silverhand Funko Pop', 500)" class="btn btn-success">500Kč</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card text-light bg-dark mb-3">
+              <img src="https://doc.jrc.cz/pic/T5T2000L01-600-600.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Samurai Tričko</h5>
+                <p class="card-text">Tričko od známe kapely Samurai ze světa Cyberpunk 2077</p>
+                <button onclick="addToCart('Samurai Tričko', 600)" class="btn btn-success">600 Kč</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card text-light bg-dark mb-3">
+              <img src="https://doc.smarty.cz/pic/23F5000N01-500-500.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cyberpunk 2077 Gangy Night City - Desková hra</h5>
+                <p class="card-text">Desková hra která se odehrává ve světě Cyberpunk 2077 kde hrajete za gangy města Night City</p>
+                <button onclick="addToCart('Cyberpunk 2077 Gangy Night City - Desková hra', 2500)" class="btn btn-success">2 500 Kč</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card text-light bg-dark mb-3">
+              <img src="https://m.media-amazon.com/images/I/6125pBA1bcL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vincent "V" soška</h5>
+                <p class="card-text">Soška hlavní postavy Vincenta "V" ze hry Cyberpunk 2077</p>
+                <button onclick="addToCart('Vincent V soška', 1300)" class="btn btn-success">1 300 Kč</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card text-light bg-dark mb-3">
+              <img src="https://myanimeshelf.com/upload/dynamic/2023-11/04/FIGURE-159357_01-3b22185e-75bd53c0.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Youtooz David Martinez</h5>
+                <p class="card-text">Youtooz postavy Davida Martineze z anime Cyberpunk Edgerunners</p>
+                <button onclick="addToCart('Youtooz David Martinez', 750)" class="btn btn-success">750 Kč</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row specialCard">
+          <div class="col-12">
+            <div class="card text-light bg-dark mb-3">
+              <img src="https://cdn.mos.cms.futurecdn.net/BmxeUh7tSC2yXGSoLrBJQL.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cyberpunk 2077 Sběratelská edice</h5>
+                <p class="card-text">Sběratelská edice hry Cyberpunk 2077</p>
+                <p class="card-text"><small class="text-active">Poslední ve skladu!</small></p>
+                <button onclick="addToCart('Cyberpunk 2077 Sběratelská edice', 6000)" class="btn btn-success">6 000 Kč</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Petr Juha 2024</p>
+        <p>Zde si hru můžete zakoupit:</p>
+        <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Steam</a>
+        <br>
+        <a class="logOff" href="http://127.0.0.1:5500/Programování/38%20-%20Finále/login.html">Odhlásit se</a>
+      </div>
+</body>
+</html>

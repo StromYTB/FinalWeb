@@ -1,0 +1,80 @@
+body {
+    background: url("https://cdn.mos.cms.futurecdn.net/ou37FZDaqYfEQfVy3TQu7J.jpg") fixed center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 10px;
+}
+
+.curious {
+    background: url("https://cdn.mos.cms.futurecdn.net/ou37FZDaqYfEQfVy3TQu7J.jpg") fixed center/cover no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.curious img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+.text {
+    margin: 20px;
+    flex: 1;
+    background-color: black;
+    padding: 2vh;
+}
+
+.text h2 {
+    color: yellow;
+}
+
+.text h4 {
+    color: cyan;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .curious {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+}
+
+.footer p{
+    color: yellow;
+}
+
+.logOff{
+    color: red;
+    text-decoration: none;
+}
+
+.logOff:hover{
+    color: darkred;
+    text-decoration: underline;
+}

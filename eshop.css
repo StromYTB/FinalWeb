@@ -1,0 +1,64 @@
+body{
+    background: url("https://cdn.mos.cms.futurecdn.net/ou37FZDaqYfEQfVy3TQu7J.jpg") fixed center/cover no-repeat;
+} 
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2vh;
+}
+
+.card {
+    margin: 2vh;
+    flex: 1 1 calc(33.333% - 4vh);
+    box-sizing: border-box;
+}
+
+.specialCard {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(50% - 4vh);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100% - 4vh);
+    }
+
+    .specialCard {
+        padding: 0 10vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .specialCard {
+        padding: 0 2vh;
+    }
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+}
+
+.footer p{
+    color: yellow;
+}
+
+.logOff{
+    color: red;
+    text-decoration: none;
+}
+
+.logOff:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,56 @@
+body{
+    background: url("https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/UjQ1pWQiHwymgQQ6q4pWQkMC.png") fixed center/cover no-repeat;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.loginContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 30vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
+    padding-bottom: 6vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2vh;
+    margin-top: 30vh;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.loginContainer img{
+    margin-left: 6vh;
+}
+
+.loginInput{
+    margin-bottom: 2vh;
+    min-height: 4vh;
+}
+
+.loginButton{
+    margin-bottom: 6vh;
+    min-height: 4vh;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 2vh;
+}
+
+.loginButton:hover {
+    cursor:pointer;
+    box-shadow: rgb(0, 238, 255) 0px 5px 15px;
+}
+
+h2{
+    margin-bottom: 1vh;
+}
+
+.loginText{
+    font-size: 2vh;
+}
